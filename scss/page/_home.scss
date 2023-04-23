@@ -1,0 +1,58 @@
+#hero {
+  width: 100%;
+  & .video-bg {
+    width: 100%;
+    height: calc(100vh - 100px);
+    object-fit: fill;
+    padding-top: 90px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+  }
+}
+.video {
+  position: relative;
+  & .pause {
+    display: none;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 10%);
+    cursor: pointer;
+    z-index: 999;
+  }
+  & .replay {
+    display: none;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 10%);
+    cursor: pointer;
+    z-index: 999;
+  }
+}
+
+.video:hover {
+  .pause {
+    display: block;
+    animation: fadeIn 3s;
+    transition: opacity;
+  }
+  .replay {
+    animation: fadeIn 3s;
+    transition: opacity;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

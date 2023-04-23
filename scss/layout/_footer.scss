@@ -1,0 +1,202 @@
+footer {
+  background: teal;
+  background: #0179ac;;
+  padding: 30px 0;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    & .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 25px;
+        & a{
+            font-size: 18px;
+        }
+    }
+}
+.flogo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+& .logo img {
+    width: 100px !important;
+    height: 100px !important; 
+    cursor: pointer;
+  }
+  & .logo-text{
+    color: white;text-decoration: none;
+    font-size: 20px;
+  }
+}
+
+.social-medias{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-desc{
+    color: white;
+    text-align: center;
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__desc{
+        color: white;
+        font-size: 25px;
+    }
+}
+.contact{
+    &__desc{
+        color: white;
+        font-size: 25px;
+    }
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    gap: 50px;
+    &__desc{
+        color: white;
+        font-size: 25px;
+    }
+}
+
+.icon{
+    margin: 0 3em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+
+.icon a{
+    position: relative;
+    width: 5em;
+    height: 5em; 
+    display: block;
+    background: white;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    transition: all .5s;
+}
+
+
+.icon:hover a i {
+    color: white;
+}
+.icon:hover a{
+    transition: all .5s;
+    transform: scale(0.70);
+}
+
+.icon a i{
+    font-size: 2em;
+    line-height: 2.5em;
+}
+
+.icon .tooltip{
+    position: absolute;
+    top: 0px;
+    background: white;
+    color: white;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    font-size: 1.5em;
+    padding: 0.5em 0.8em;
+    border-radius: 47%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4 cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+
+.icon .tooltip::before{
+    content: '';
+    position: absolute;
+    width: .8em;
+    height: .8em;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+
+}
+
+.icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.icon:hover a,
+.icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+
+.facebook:hover .tooltip,
+.facebook:hover a,
+.facebook:hover .tooltip::before{
+    background: #4267B2;
+}
+
+
+.instagram:hover a,
+.instagram:hover .tooltip,
+.instagram:hover .tooltip::before{
+    background: #bc2a8d;
+}
+
+
+.twitter:hover a,
+.twitter:hover .tooltip,
+.twitter:hover .tooltip::before{
+    background: #00acee;
+}
+
+
+.youtube:hover a,
+.youtube:hover .tooltip,
+.youtube:hover .tooltip::before{
+    background: #FF0000;
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+// Media queries
+@media screen and (max-width: 800px) {
+    .icons{
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 738px) {
+    .footer{
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 324px) {
+  .pages{
+    margin: 0 auto;
+  }
+  .contact{
+    margin: 0 auto;
+  }
+}

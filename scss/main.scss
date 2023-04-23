@@ -1,0 +1,16 @@
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+@import "./base/reset";
+@import "./components/carousel";
+@import "./components/loader";
+@import "./components/backtop";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./page/about";
+@import "./page/form";
+@import "./page/popular";
+@import "./page/home";
+
+body{
+    overflow-x: hidden;
+}
