@@ -77,6 +77,7 @@ elForm.addEventListener("submit", (evt) => {
 const video = document.querySelector(".video-bg");
 const pauseVideo = document.querySelector(".pause");
 const playVideo = document.querySelector(".replay");
+video.playbackRate = 1.5
 
 pauseVideo.addEventListener("click", (evt) => {
   evt.preventDefault();
@@ -90,6 +91,4 @@ playVideo.addEventListener("click", (evt) => {
   playVideo.style.display = "none";
   pauseVideo.style.display = "block"
 });
-
-// Title 
 
