@@ -64,11 +64,11 @@
 	</header>
 	<main>
 		<section id="hero">
-				<div class="video">
-					<video src="./videos/video.mp4" autoplay loop muted  class="video-bg"></video>
+			<div class="video">
+				<video src="./videos/video.mp4" autoplay loop muted class="video-bg"></video>
 				<img class="pause" src="./images/pause.png" alt="pause">
 				<img class="replay" src="./images/replay.png" alt="replay">
-				</div>
+			</div>
 		</section>
 		<section id="about">
 			<div class="container about_box">
@@ -127,7 +127,7 @@
 											states that occupy the middle latitudes
 											of the continent, the United States includes
 											the state of Alaska, at the northwestern extreme
-											of North America, and the island state of Hawaii, 
+											of North America, and the island state of Hawaii,
 											in the mid-Pacific Ocean.
 										</p>
 									</div>
@@ -334,28 +334,28 @@
 			<div class="container">
 				<div class=" all">
 					<div class="login_form">
-						<form action="" class="form js-form">
+						<form action="" class="form js-form" onsubmit=" return sendtelegram()">
 							<h1 data-aos="zoom-in-up" data-aos-duration="1500" class="form_title"> CONTACT FORM
 							</h1>
 
 							<div class="form_div" data-aos="zoom-in-up" data-aos-duration="1500">
-								<input type="text " class="form_input js-name" placeholder=" ">
+								<input type="text " class="form_input js-name" placeholder=" " name="name" id="name" required autocomplete="off">
 								<label for="" class="form_label">Ism</label>
 							</div>
 
 							<div class="form_div" data-aos="zoom-in-up" data-aos-duration="1500">
-								<input type="text" class="form_input js-lastname" placeholder=" ">
+								<input type="text" class="form_input js-lastname" placeholder=" " name="surname" id="surname" required autocomplete="off">
 								<label for="" class="form_label">Familiya</label>
 							</div>
 
 							<div class="form_div" data-aos="zoom-in-up" data-aos-duration="1500">
-								<input type="tel" class="form_input js-phone" placeholder=" ">
+								<input type="tel" class="form_input js-phone" placeholder=" " name="phone" id="phone" required autocomplete="off">
 								<label for="" class="form_label">Telfon raqam</label>
 							</div>
 
 							<div class="form_div" data-aos="zoom-in-up" data-aos-duration="1500">
 								<!-- <input type="tex"  placeholder=" "> -->
-								<textarea name="text" class="form_textarea js-text" id="text" rows="4" cols="50"
+								<textarea class="form_textarea js-text" name="message" id="message" rows="4" cols="50"
 									placeholder=" "></textarea>
 								<span class="form_label">Maqsadingiz</span>
 							</div>
@@ -364,8 +364,8 @@
 
 								<button data-aos="zoom-in-up" data-aos-duration="1500" type="submit"
 									class="form_button js-btn">Send</button>
-								<button data-aos="zoom-in-up" data-aos-duration="1500" class=" admin"><a
-										class="href" href="./admin.html">Admin
+								<button data-aos="zoom-in-up" data-aos-duration="1500" class=" admin"><a class="href"
+										href="./admin.html">Admin
 										page</a></button>
 						</form>
 					</div>
@@ -464,6 +464,7 @@
 	<script src="./slick-1.8.1/slick/slick.js"></script>
 	<script src="./js/carousel.js"></script>
 	<script src="./js/main.js"></script>
+	<script src="./js/sendtelegram.js"></script>
 
 </body>
 

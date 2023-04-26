@@ -4,10 +4,11 @@
     width: 100%;
     height: calc(100vh - 100px);
     object-fit: fill;
+    object-position: center;
     padding-top: 90px;
     margin: 0 auto;
     display: block;
-    border: none;
+    border: none; 
   }
 }
 .video {
