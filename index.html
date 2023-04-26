@@ -16,6 +16,7 @@
 		integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 	<link rel="stylesheet" href="./css/main.css" />
 </head>
 
@@ -339,17 +340,20 @@
 							</h1>
 
 							<div class="form_div" data-aos="zoom-in-up" data-aos-duration="1500">
-								<input type="text " class="form_input js-name" placeholder=" " name="name" id="name" required autocomplete="off">
+								<input type="text " class="form_input js-name" placeholder=" " name="name" id="name"
+									required autocomplete="off">
 								<label for="" class="form_label">Ism</label>
 							</div>
 
 							<div class="form_div" data-aos="zoom-in-up" data-aos-duration="1500">
-								<input type="text" class="form_input js-lastname" placeholder=" " name="surname" id="surname" required autocomplete="off">
+								<input type="text" class="form_input js-lastname" placeholder=" " name="surname"
+									id="surname" required autocomplete="off">
 								<label for="" class="form_label">Familiya</label>
 							</div>
 
 							<div class="form_div" data-aos="zoom-in-up" data-aos-duration="1500">
-								<input type="tel" class="form_input js-phone" placeholder=" " name="phone" id="phone" required autocomplete="off">
+								<input type="tel" class="form_input js-phone" placeholder=" " name="phone" id="phone"
+									required autocomplete="off">
 								<label for="" class="form_label">Telfon raqam</label>
 							</div>
 
@@ -363,10 +367,8 @@
 							<div class="mains">
 
 								<button data-aos="zoom-in-up" data-aos-duration="1500" type="submit"
-									class="form_button js-btn">Send</button>
-								<button data-aos="zoom-in-up" data-aos-duration="1500" class=" admin"><a class="href"
-										href="./admin.html">Admin
-										page</a></button>
+									class="form_button js-btn" onclick="">Send</button>
+
 						</form>
 					</div>
 				</div>
@@ -465,7 +467,14 @@
 	<script src="./js/carousel.js"></script>
 	<script src="./js/main.js"></script>
 	<script src="./js/sendtelegram.js"></script>
-
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	<script src="./js/toastify.js"></script>
+	<script>
+		window.replainSettings = { id: '351bd106-45a9-48de-adec-259fbc463c5d' };
+		(function(u){var s=document.createElement('script');s.async=true;s.src=u;
+		var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+		})('https://widget.replain.cc/dist/client.js');
+		</script>
 </body>
 
 </html>
