@@ -60,6 +60,8 @@
   padding: 1em;
   z-index: 1;
   background: none;
+  resize: vertical;
+  overflow: scroll;
 }
 
 .form_label {
@@ -85,7 +87,7 @@
   font-size: 1em;
   border-radius: 0.5em;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 1s;
 }
 
 .mains {

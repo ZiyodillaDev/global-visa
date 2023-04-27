@@ -1,5 +1,5 @@
-#popular{
-  padding-top: 90px;
+#popular {
+  padding-top: 80px;
 }
 .slide_content {
   margin: 0 auto;
@@ -35,8 +35,10 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  width: 100%;
   flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
 }
 // content left style
 
@@ -57,13 +59,13 @@
   .right_text {
     width: 100%;
   }
-  .image{
+  .image {
     display: none !important;
   }
-  .right-column-heading{
+  .right-column-heading {
     padding-top: 30px !important;
   }
-  .paragraph{
+  .paragraph {
     padding-top: 0px !important;
   }
 }
@@ -74,7 +76,7 @@
   font-size: 30px;
 }
 .heading-text {
-  margin-left: 47px;
+  // margin-left: 47px;
   font-family: Montserrat, sans-serif;
   color: #fff;
   font-weight: 900;
@@ -118,13 +120,13 @@
 }
 
 .paragraph {
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   color: white;
   font-size: 18px;
-  padding-top: 40px;  
+  padding-top: 40px;
 }
 
 .image {
@@ -134,7 +136,7 @@
   max-height: 190px;
   max-width: 54%;
   margin-top: 12vh;
-  margin-left: 60px;
+  // margin-left: 60px;
   // -o-object-fit: cover;
   // object-fit: cover;
 }
@@ -187,36 +189,38 @@
   top: calc(100% - 100px);
 }
 
-
-
-@media screen and (max-width:1000px) {
-  .slider_prev{
+@media screen and (max-width: 1000px) {
+  .slider_prev {
     left: 30% !important ;
   }
 }
-@media screen and (max-width:500px) {
-  .second{
-display: none;
+@media screen and (max-width: 500px) {
+  .second {
+    display: none;
   }
-  .paragraph{
+  .paragraph {
     width: 400px !important;
-    text-align: center;
+    // text-align: center;
+    & * {
+      overflow: hidden !important ;
+    }
   }
-  .slide_content-container{
+  .slide_content-container {
     justify-content: center;
   }
-  .right-column-heading{
+  .right-column-heading {
     text-align: center;
   }
-  .heading-text{
+  .heading-text {
     font-size: 40px;
     text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
   }
-
 }
 
-@media screen and (max-width:400px) {
-  .slider_prev{
+@media screen and (max-width: 400px) {
+  .slider_prev {
     left: 20% !important ;
   }
 }

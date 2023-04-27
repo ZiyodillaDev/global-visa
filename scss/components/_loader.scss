@@ -6,9 +6,6 @@
   height: 100%;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
 
 .loader {
   text-align: center;
@@ -16,24 +13,14 @@ body {
   position: relative;
   overflow: hidden;
   max-width: 70rem;
-  height: 30rem;
+  height: 100vh;
   margin: 0 auto;
 }
 
-.wait {
-  margin: 5rem 0;
-}
-
-
 .iata_code {
-  font-size: 6rem;
-  opacity: 0.9;
-  top: 60%;
+  // top: 65%;
   position: absolute;
-  color: white;
-  display: inline-block;
   animation: loading 3.5s ease-in-out infinite;
-  font-family: 'Faster One', cursive;
 }
 
 @keyframes loading {
@@ -48,42 +35,17 @@ body {
 
 .departure_city {
   left: 0;
+  top: 45%;
 }
 
 .arrival_city {
-  right: 130px;
+  right: 0px;
+  top: 45%;
 }
-
-.plane {
-  position: absolute;
-  margin: 0 auto;
-  width: 100%;
-  top: 50%;
-}
-
-.plane-img {
-  -webkit-animation: spin 2.5s linear infinite;
-  -moz-animation: spin 2.5s linear infinite;
-  animation: spin 2.5s linear infinite;
-}
-
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+.departure_city img,
+.arrival_city img{
+  width: 400px;
+  height: 80px;
 }
 
 .earth-wrapper {
@@ -103,9 +65,13 @@ body {
   animation: earthAnim 12s infinite linear;
   margin: 0 auto;
   border: 1px solid #cdd1d3;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%) !important;
+  top: 50%;
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:200px) {
   @keyframes earthAnim {
     0% {
       background-position-x: 0;
@@ -117,22 +83,62 @@ body {
   }
 }
 
-@media screen and (max-width: 900px) {
-  .departure_city {
-    left: 0;
-    right: 0;
-    top: 30%;
-    position: absolute;
-    margin: 0 auto;
-    z-index: 999 !important;
+@media screen and (max-width: 950px) {
+ .departure_city{
+  top: 20% !important;
+  left: 30% !important;
+ }
+ .earth{
+  position: absolute !important;
+  top: -15% !important;
+  left: 40% !important;
+  transform: translate(0%, -70%) !important;
+ }
+ .arrival_city{
+  top: 60% !important;
+  left: 0% !important;
+ }
+}
+
+@media screen and (max-width:700px) {
+  .departure_city{
+   left: 20% !important;
+  }
+  .arrival_city{
+    left: 0 !important;
   }
 
-  .arrival_city {
-    left: 0;
-    right: 0;
-    top: 93%;
-    position: absolute;
-    margin: 0 auto;
-    z-index: 999 !important;
+}
+
+@media screen and (max-width:550px) {
+  .earth{
+    left: 35% !important;
+  }
+  .departure_city{
+    left: 10% !important;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .departure_city img,
+  .arrival_city img{
+    width: 300px !important;
+    height: 80px;
+  }
+  .departure_city{
+    left: 20% !important;
+    top: 20% !important;
+  }
+  .arrival_city{
+    top: 60% !important;
+  }
+  .earth{
+    left: 30% !important;
+  }
+}
+
+@media screen and (max-width:460px) {
+  .departure_city{
+    left: 15% !important;
   }
 }

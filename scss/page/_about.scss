@@ -12,7 +12,7 @@
     // width: 50%; 
     h6 {
       font-size: large;
-      color: teal;
+      color: #0179ac;
       padding-bottom:20px;
     }
     h2 {
@@ -31,11 +31,11 @@
       transition: 0.5s !important;
       cursor: pointer;
       background-color: transparent;
-      color: teal;
+      color: #0179ac;
       border-radius: 10px;
-      border: 1px solid teal;
+      border: 1px solid #0179ac;
       &:hover {
-        background-color: teal;
+        background-color: #0179ac;
         color: white;
       }
     }
