@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
 header {
   padding: 1.8rem 0;
   transition: 0.5s;
@@ -11,7 +10,7 @@ header {
   font-family: 'Allerta Stencil', sans-serif;
 
   & .logo {
-    width: 50px;
+    width: 200px;
     height: 50px;
     cursor: pointer;
     text-decoration: none;
@@ -160,9 +159,3 @@ header {
     gap: 20px;
 }
 
-.logo-text{
-    color: white;
-    text-decoration: none;
-    font-family: 'Faster One', cursive;
-    font-size: 20px;
-}
